@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body ul {
+    list-style: none;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Faz a seção ocupar toda a altura da tela */
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}
+
+#site-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Organiza os itens horizontalmente */
+}
+
+ul#nav li {
+    font-size: 1.3rem;
+    margin: auto 10px;
+}
+
+nav ul#nav li:not(:last-child)::after {
+        content: " / ";
+        margin-left: 10px;
+}
+
+ul#nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul#nav li a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+
+div[id="main-topic"] h1{
+    font-size: 3em;
+}
+div[id="main-topic"] div {
+    color:rgb(96, 100, 100);
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+.angular-hr {
+    border: 1px solid black;
+    transform: rotate(-0.6deg);
+    position: relative;
+    bottom: -3px;
+    right: calc(99.5vw - 100vw);
+    width: 99%;
+}
+
+section[id="projects"] {
+    display: flex;
+    height: 500px;
+
+}
+
+
+.work-experience {
+    grid-row: span 3;
+}
+
+.education {
+    grid-row: span 8;
+}
+
+.opensource-work {
+    grid-row: span 5
+}
+
+#projects {
+    height: 500px;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.mid-list {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    
+}
+
+.projects-section {
+    width: 30%;
+    border: 2px solid black;
+}
+
+.projects-section h2 {
+    padding: 10px 0 0px 30px;
+}
+
+.project-list {
+    padding: 0;
+}
+
+
+.project-list li {
+    font-size: 1rem;
+    padding: 15px 0 15px 30px;
+}
+
+.project-list hr {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 0;
+    border: 1px solid black;
+
+}
+
+.work-experience-section {
+    padding: 10px;
+    height: 40%;
+    border: 2px solid black;
+}
+
+.opensource-work-section {
+    padding: 10px;
+    height: 60%;
+    border: 2px solid black;
+}
+
+.education-section {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#courses-list {
+    list-style: "- ";
+    padding: 15
+}
