@@ -178,7 +178,7 @@ hr {
 }
 
 .education-section ul{
-    
+    padding-left: 1rem;
     list-style: "- ";
 }
 
@@ -230,4 +230,17 @@ hr {
 
 .gray {
     color:silver;
+}
+
+.footer-container {
+    display: grid;
+    place-content: center;
+}
+
+.footer-container {
+    display: grid;
+    
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
 }
