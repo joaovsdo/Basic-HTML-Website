@@ -223,10 +223,12 @@ hr {
 
 .review-container {
     grid-template-columns: 1fr 1fr 1fr;
+    
     max-width: 55rem;
     gap: 2rem;
     margin-top: 1rem;
-    margin-inline: 3.5rem;
+    margin-inline: auto;
+    
 
 }
 
