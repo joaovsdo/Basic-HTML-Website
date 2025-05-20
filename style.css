@@ -9,21 +9,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header-container {
-    display: grid;
-    grid-template-columns: ;
-}
-
-#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 380px;
-    text-align: center;
-}
-
-
 header {
     padding: 1rem 2rem;
     display: flex;
@@ -37,14 +22,11 @@ header i {
 }
 
 .site-name {
-    
     margin-right: auto;
     font-size: 1.7rem;
-    
 }
 
-#nav {
-   
+nav {
     font-size: 2rem;
 }
 
@@ -73,11 +55,19 @@ ul#nav li a:hover {
     color: gray;
 }
 
-
-div[id="main-topic"] h1{
-    font-size: 3em;
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
 }
-div[id="main-topic"] div {
+
+#home h1{
+    font-size: 3rem;
+}
+#home div {
     padding-top: 1rem;
     color:rgb(96, 100, 100);
 }
@@ -260,4 +250,205 @@ hr {
     padding-top: 5rem;
     padding-bottom: 3rem;
     font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .site-name {
+        margin: 1rem auto;
+    }
+    nav {
+        display: flex;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home div {
+        padding-top: 0.5rem;
+        color:rgb(96, 100, 100);
+    }
+/*
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "column1"
+            "column2"
+            "column3"
+        ;
+        margin-inline: 0;
+        font-size: 1.3rem;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+}
+
+    .projects-container > *,
+    .mid-list > *{
+        display: grid;
+        text-align: left;
+    }
+
+    .mid-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.75fr 1fr;
+    }
+
+    .column-one {
+        grid-area: column1;
+    }
+
+    .column-two {
+        grid-area: column2;
+    }
+
+    .column-three {
+        grid-area: column3;
+    }
+
+
+    .projects-container ul {
+        list-style: none;
+    }
+
+    .projects-section {
+        display: grid;
+    
+    }
+
+    .projects-section > h2 {
+        padding: 2rem 1rem  0  2rem;
+    }
+
+    .project-list {
+        display: grid;
+        gap: 0.8rem;
+        font-size: 1.35rem;
+        padding-bottom: 2rem;
+    }
+
+    .project-list > hr {
+        border: 0;
+        height: 2px;
+        background-color: black;
+
+    }
+
+    .project-list > li {
+        padding-left: 2rem ;
+        
+    }
+
+
+    .mid-list {
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+    .mid-list > * ,
+    .mid-list > * > *{
+        display: grid;
+        gap: 1rem;
+        place-content: start;
+    }
+
+    .work-experience-section {
+        padding: 2.0rem 1rem  0  1.5rem;
+    }
+
+    .opensource-work-section {
+        border-top: 2px solid black;
+        padding: 1.3rem 1rem  0  1.5rem;
+    }
+
+    .education-section ul{
+        padding-left: 1rem;
+        list-style: "- ";
+    }
+
+    .education-section > * {
+        display: grid;
+    }
+
+    .education-section {
+        
+        padding: 2.3rem 1rem  1rem  1.5rem;
+        display: grid;
+        gap: 1rem;
+        place-content: start;
+    }
+
+    .education-section p{
+        padding: 0.5rem 0;
+    }
+
+    .review-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 14.5rem;
+    }
+
+    .review-section > *,
+    .review-container > * {
+        display: grid;
+    }
+
+    .review-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        max-width: 55rem;
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-inline: auto;
+        
+
+    }
+
+    .review-section h2 {
+        padding: 2.3rem 1rem  0  2.8rem;
+    }
+
+    .review-item {
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        border: 2px solid black;
+        border-radius: 50px;
+        padding-inline: 1.5rem;
+        font-size: 1.2rem;
+    } 
+
+    .gray {
+        color:silver;
+    }
+
+    .footer-container {
+        display: grid;
+        place-content: center;
+    }
+
+    .footer-container {
+        display: grid;
+        
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+        */
 }
